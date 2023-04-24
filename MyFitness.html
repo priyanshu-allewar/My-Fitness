@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="gym logo.png">
+    <title>My Fitness</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url('anastase-maragos-9dzWZQWZMdE-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        color: white;
+        /* width: 100%;
+        height: 10px; */
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 45px;
+        top: 10px;
+    }
+
+    .left img {
+        width: 75px;
+        border-radius: 50%;
+        filter: invert(100%);
+        /* invert function is used to change the color */
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        /* border: 2px solid rgb(224, 234, 31); */
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+    }
+
+    .right {
+        /* border: 2px solid rgb(36, 132, 21); */
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 20px;
+    }
+
+    .navbar {
+        display: inline-block;
+        /* position: fixed; */
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 20px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        text-decoration: none;
+        margin: 0px -16px;
+        background-color: black;
+        color: white;
+        padding: 3px 23px;
+        border: 3px solid white;
+        border-radius: 51px;
+        cursor: pointer;
+        /* position: relative; */
+    }
+
+    .btnn {
+        text-decoration: none;
+        margin: 0px 26px;
+        background-color: rgb(21, 208, 64);
+        color: white;
+        padding: 3px 19px;
+        border: 3px solid rgb(21, 208, 64);
+        border-radius: 51px;
+        cursor: pointer;
+        /* position: relative; */
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .container {
+        background: radial-gradient(125% 134.66% at 0.22% 1.67%, rgb(155 155 171 / 35%) 0%, rgb(147 97 97 / 0%) 90%);
+    /* border: 3px solid white; */
+    border-radius: 5px;
+    width: 90%;
+    margin: 127px 30px;
+    padding: 111px 54px;
+    display: flex;
+    }
+
+    .formgrp input {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        display: block;
+        padding: 6px;
+        margin: 11px;
+        border: 1px solid white;
+        width: 205px;
+        border-radius: 5px;
+    }
+
+    .container h1 {
+        font-size: 35px;
+    }
+
+    .quote {
+        /* border: 2px solid white; */
+    /* width: 30%; */
+    /* padding-right: 408px; */
+    /* padding-top: 21px; */
+    padding: 50px;
+    margin-left: 964px;
+    margin-top: 50px;
+    }
+
+   .quote h3 {
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+   .quote h1 {
+        font-size: 100px;
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+
+<body>
+    <!-- <img src="gym.jpeg" alt="Error"> -->
+    <header class="head">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="gym logo.png" alt="">
+            <div>
+                My Fitness
+            </div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Fitness calaculator</a></li>
+
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <!-- <button class="btn"> Call us</button>
+            <button class="btn"> Email us</button> -->
+            <a href="mailto: priyanshuallewar07@gmail.com" class="btn">Email us</a>
+            <a href="https://wa.me/919325319380" class="btnn">WhatsApp</a>
+        </div>
+    </header>
+    <div class="container">
+        
+        <form action="noaction.php">
+            <div class="formgrp">
+                <h1> Join Our GYM Now</h1>
+                <label for="text">NAME:</label>
+                <input type="text" name="" placeholder="Enter your name">
+                <div class="formgrp">
+                    <label for="number">AGE:</label>
+                    <input type="number" placeholder="Enter your age">
+                </div>
+                <div class="formgrp">
+                    <label for="number">CONTACT NO.:</label>
+
+                    <input type="number" placeholder="Enter your phone number">
+                </div>
+                <div class="formgrp">
+                    <label for="number">EMAIL:</label>
+
+                    <input type="email" name="" placeholder="Enter your Email">
+                </div><br>
+                <div>
+                    <button class="btn"> SUBMIT</button>
+                </div>
+
+            </div>
+        </form>
+        <div class="quote">
+            <h3>GET READY TO </h3>
+            <h1>BURN</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
